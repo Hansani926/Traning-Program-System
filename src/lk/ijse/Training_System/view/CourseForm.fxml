@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" onMouseClicked="#backToHomeOnAction" prefHeight="575.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Training_System.controller.CourseFormController">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="801.0" style="-fx-background-color: #A3E4D7;">
+         <children>
+            <Label layoutX="164.0" layoutY="16.0" prefHeight="39.0" prefWidth="282.0" text="       Course    Form" textFill="#08536f">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="84.0" layoutY="16.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="83.0" prefHeight="21.0" prefWidth="801.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="208.0" fitWidth="250.0" layoutX="227.0" layoutY="137.0" opacity="0.77" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/images.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtcode" layoutX="25.0" layoutY="181.0" onAction="#getDataOnAtion" prefHeight="25.0" prefWidth="104.0" promptText="Code" />
+      <TextField fx:id="txtcourseName" layoutX="166.0" layoutY="181.0" prefHeight="25.0" prefWidth="138.0" promptText="CourseName" />
+      <TextField fx:id="txtcourseType" layoutX="370.0" layoutY="181.0" prefHeight="25.0" prefWidth="168.0" promptText="courseType" />
+      <TextField fx:id="txtduration" layoutX="601.0" layoutY="181.0" prefHeight="25.0" prefWidth="168.0" promptText="duration" />
+      <TextField fx:id="txtSearch" layoutX="77.0" layoutY="263.0" prefHeight="25.0" prefWidth="536.0" promptText="Search" />
+      <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="654.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/Search.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableCourse" layoutX="77.0" layoutY="352.0" prefHeight="196.0" prefWidth="479.0">
+        <columns>
+          <TableColumn fx:id="colcode" prefWidth="75.0" text="Code" />
+           <TableColumn fx:id="colcourseName" prefWidth="117.0" text="Course Name" />
+            <TableColumn fx:id="colcourseType" prefWidth="147.0" text="Course Type" />
+            <TableColumn fx:id="colduration" prefWidth="139.0" text="Duration" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSave" layoutX="642.0" layoutY="336.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: navy;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="642.0" layoutY="477.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: darkgreen;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="642.0" layoutY="401.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: darkred;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

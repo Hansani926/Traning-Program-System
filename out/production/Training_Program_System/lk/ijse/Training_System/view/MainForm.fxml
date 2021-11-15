@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="457.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Training_System.controller.MainFormController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="801.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="150.0" layoutY="23.0" prefHeight="54.0" prefWidth="471.0" text="     ROYAL  INSTITUTE">
+               <font>
+                  <Font name="Bell MT Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="73.0" layoutX="56.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/rol.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="100.0" prefHeight="475.0" prefWidth="801.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="btnStudent" layoutX="83.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#studentOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: gray;" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCourse" layoutX="343.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#courseOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: gray;" text="Course" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRegistration" layoutX="612.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#RegistrationOnAction" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: gray;" text="Registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="176.0" layoutX="41.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/st.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="321.0" layoutY="96.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../asserts/cour.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="595.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/re.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
